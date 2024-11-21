@@ -1,0 +1,336 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #081b29;
+  color: #fff;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Profile Section */
+.profile-section {
+  text-align: center;
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  margin: 0 5px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.download {
+  background: #007bff;
+  color: white;
+}
+
+.contact {
+  background: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+/* Work/Education Box Container */
+.workeduc-box {
+  background-color: #112240; /* Slightly lighter dark background */
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 40px auto; /* Centering the box */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Individual Work/Education Entry */
+.workeduc-content {
+  padding: 20px 0;
+  border-bottom: 1px solid #233554; /* Divider between items */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Last item without border */
+.workeduc-content:last-child {
+  border-bottom: none;
+}
+
+/* Year Styling */
+.year {
+  font-size: 1rem;
+  color: #64ffda; /* Accent color */
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+}
+
+.year i {
+  font-size: 1.2rem;
+  color: #64ffda; /* Icon accent color */
+}
+
+/* Job Title Styling */
+.workeduc-content h3 {
+  font-size: 1.5rem;
+  color: #ffffff; /* Bright white text */
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Job Description */
+.workeduc-content p {
+  font-size: 1rem;
+  color: #8892b0; /* Muted text color */
+  margin: 0;
+  line-height: 1.6; /* Improve readability */
+}
+
+/* Services Box */
+.services-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Individual Service Card */
+.services-content {
+  background-color: #112240; /* Card background */
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect */
+.services-content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Icons */
+.services-content i {
+  font-size: 3rem;
+  color: #64ffda; /* Accent color for icons */
+  margin-bottom: 10px;
+}
+
+/* Service Title */
+.services-content h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+/* Service Description */
+.services-content p {
+  font-size: 1rem;
+  color: #8892b0; /* Muted text color */
+  margin-bottom: 20px;
+}
+
+/* Read More Button */
+.services-content .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #64ffda;
+  border-radius: 5px;
+  color: #64ffda;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Button Hover Effect */
+.services-content .btn:hover {
+  background-color: #64ffda;
+  color: #112240;
+}
+
+/* Skills Box Styling */
+.skills-box {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 20px; /* Space between skill sections */
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto; /* Center container */
+}
+
+/* Individual Skills Content */
+.skills-content {
+  background-color: #112240; /* Slightly lighter dark background */
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 20px); /* Flexible 3-column layout */
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  text-align: center;
+}
+
+/* Skills Title */
+.skills-content h3 {
+  font-size: 1.5rem;
+  color: #ffffff; /* White text */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #64ffda; /* Accent underline */
+  display: inline-block; /* Inline underline */
+  padding-bottom: 5px;
+}
+
+/* Skills List Container */
+.content {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items for responsiveness */
+  gap: 10px; /* Space between skill items */
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Skill Item */
+.content span {
+  background-color: #233554; /* Darker background for skill blocks */
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 1rem;
+  color: #64ffda; /* Accent color for icons */
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Skill Icon Styling */
+.content span i {
+  font-size: 1.2rem;
+}
+
+/* Hover Effect on Skill */
+.content span:hover {
+  background-color: #0a2540; /* Slightly darker hover effect */
+  transform: scale(1.05); /* Subtle scaling */
+}
+
+/* Portfolio Box */
+.portfolio-box {
+  background-color: #112240; /* Slightly lighter dark background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Image Box */
+.img-box img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover; /* Ensures image fits without distortion */
+  border-radius: 10px; /* Rounded edges */
+  margin-bottom: 20px;
+}
+
+/* Info Box */
+.info-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Info Title Styling */
+.info-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info-title h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.info-title a {
+  color: #64ffda; /* Accent color for link */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.info-title a:hover {
+  color: #ffffff; /* Lighten color on hover */
+}
+
+/* Description Styling */
+.info-box p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 10px 0;
+  color: #ccd6f6; /* Light blue text */
+}
+
+/* Button Box */
+.btn-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+}
+
+/* Buttons */
+.btn {
+  background-color: #233554; /* Accent color */
+  color: #0a192f; /* Contrast text */
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
