@@ -11,63 +11,102 @@ body {
   padding: 20px;
 }
 
-h1 {
+.title {
   text-align: center;
-  font-size: 22px;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  color: #64ffda; /* Accent color */
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+/* Profile Section */
+
+.profile-page {
+  text-align: center;
+  background-color: #112240; /* Dark background */
+  padding: 40px 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  color: #ccd6f6; /* Light text */
 }
 
-/* Profile Section */
-.profile-section {
-  text-align: center;
-  background: #1a1a1a;
-  padding: 20px;
-  border-radius: 10px;
+.profile-page img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #64ffda; /* Accent border */
+  object-fit: cover;
   margin-bottom: 20px;
 }
 
-.profile img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+.profile-page h1 {
+  font-size: 2rem;
+  color: #64ffda; /* Accent color */
   margin-bottom: 10px;
 }
 
-.social-icons {
-  margin: 10px 0;
+.profile-page h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #67e2eb; /* Subtle text */
+  margin-bottom: 20px;
 }
 
-.social-icons a {
-  margin: 0 5px;
+/* Social Media Links */
+.profile-page .social-media {
+  margin-bottom: 20px;
 }
 
-.social-icons img {
-  width: 24px;
-  height: 24px;
+.profile-page .social-media a {
+  color: #64ffda; /* Accent color */
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
 }
 
-.buttons {
-  margin-top: 15px;
+.profile-page .social-media a:hover {
+  color: #52d6b4; /* Slightly darker accent on hover */
 }
 
-.btn {
+/* Profile Description */
+.profile-page p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccd6f6;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.profile-page .btn-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.profile-page .btn {
+  background-color: #64ffda; /* Accent color */
+  color: #0a192f; /* Dark text for contrast */
+  font-size: 1rem;
+  font-weight: bold;
   padding: 10px 20px;
-  margin: 5px;
-  font-size: 14px;
   border-radius: 5px;
-  border: none;
-  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.download {
-  background: #007bff;
-  color: white;
+.profile-page .btn:hover {
+  background-color: #52d6b4; /* Slightly darker on hover */
+  transform: scale(1.05); /* Subtle scaling effect */
 }
 
-.contact {
-  background: white;
-  color: #007bff;
-  border: 1px solid #007bff;
+/* Contact Button Specific */
+.profile-page .btn.contact-me {
+  background-color: #52d6b4; /* Neutral secondary color */
+}
+
+.profile-page .btn.contact-me:hover {
+  background-color: #64ffda; /* Accent hover effect */
 }
 
 /* Work/Education Box Container */
@@ -325,7 +364,7 @@ h1 {
 /* Buttons */
 .btn {
   background-color: #233554; /* Accent color */
-  color: #0a192f; /* Contrast text */
+  color: #48e5fa; /* Contrast text */
   text-decoration: none;
   font-size: 1rem;
   padding: 10px 20px;
@@ -333,4 +372,62 @@ h1 {
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+/* Contact Box */
+.contact-box {
+  background-color: #112240; /* Slightly lighter dark background */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Form Fields */
+.contact-box .field {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  background-color: #0a192f; /* Dark input background */
+  color: #ffffff; /* White text */
+  border: 1px solid #64ffda; /* Accent border */
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-box .field::placeholder {
+  color: #ccd6f6; /* Light blue placeholder text */
+}
+
+.contact-box .field:focus {
+  border-color: #52d6b4; /* Lighter accent color on focus */
+}
+
+/* Textarea Styling */
+.contact-box textarea.field {
+  resize: none; /* Prevent resizing */
+  height: 150px; /* Fixed height */
+}
+
+/* Submit Button */
+.contact-box .btn {
+  background-color: #64ffda; /* Accent color */
+  color: #0a192f; /* Contrast text */
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%; /* Full width */
+}
+
+.contact-box .btn:hover {
+  background-color: #52d6b4; /* Slightly darker accent on hover */
+  transform: scale(1.05); /* Subtle scaling effect */
+}
+
 

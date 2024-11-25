@@ -5,33 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mobile Responsive Design</title>
+  <!-- link CSS -->
   <link rel="stylesheet" href="styles.css">
+  <!-- Include Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
   <div class="container">
     <!-- Profile Section -->
-    <div class="profile-section">
-      <div class="profile">
-        <img src="profile-placeholder.png" alt="Profile Picture">
-      </div>
+    <div class="profile-page">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUpsDK5dkH7envHCdUECqq0XzCWK1Dv96XcQ&s" alt="">
       <h1>Anshul</h1>
-      <h2>Web Developer</h2>
-      <div class="social-icons">
-        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-        <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+      <h3>Web Developer</h3>
+
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
       </div>
-      <p>
-        hi, I'm Anshul Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur est porro aspernatur itaque
-        velit,
-        reiciendis, debitis recusandae culpa accusamus et ducimus facere fugit maxime alias tempora, incidunt veniam
-        exercitationem rerum.
-      </p>
-      <div class="buttons">
-        <button class="btn download">Download CV</button>
-        <button class="btn contact">Contact Me</button>
+
+      <p>hi, I'm Anshul Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur est porro
+        aspernatur itaque velit, reiciendis, debitis recusandae culpa accusamus et ducimus facere fugit
+        maxime alias tempora, incidunt veniam exercitationem rerum.</p>
+
+      <div class="btn-box">
+        <a href="#" class="btn">Download CV</a>
+        <a href="#" class="btn contact-me">Contact Me</a>
       </div>
     </div>
 
@@ -164,25 +166,38 @@
     <h1 class="title">Latest Project</h1>
 
     <div class="portfolio-box">
-        <div class="img-box">
-            <img src="https://procreator.design/blog/wp-content/uploads/2020/01/How-to-Evaluate-a-Dribbble-Web-Design-Portfolio-Effectively-1.png" alt="">
+      <div class="img-box">
+        <img
+          src="https://procreator.design/blog/wp-content/uploads/2020/01/How-to-Evaluate-a-Dribbble-Web-Design-Portfolio-Effectively-1.png"
+          alt="">
+      </div>
+
+
+      <div class="info-box">
+        <div class="info-title">
+          <h3>Project Name</h3>
+          <a href="#">Live Preview<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
-            
+        <p>Tech Used:</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ducimus quae quod assumenda.
+          Iure illum ad magni, maxime odio error.</p>
+      </div>
 
-            <div class="info-box">
-                <div class="info-title">
-                    <h3>Project Name</h3>
-                    <a href="#">Live Preview<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <p>Tech Used:</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ducimus quae quod assumenda.
-                    Iure illum ad magni, maxime odio error.</p>
-            </div>
+      <div class="btn-box">
+        <a href="#" class="btn">Source Code</a>
+        <a href="#" class="btn">More Projects</a>
+      </div>
+    </div>
 
-            <div class="btn-box">
-                <a href="#" class="btn">Source Code</a>
-                <a href="#" class="btn">More Projects</a>
-            </div>
+    <h1 class="title">Contact Me!</h1>
+
+    <div class="contact-box">
+      <form action="#">
+        <input type="text" class="field" placeholder="Full Name" required>
+        <input type="email" class="field" placeholder="Email Address" required>
+        <textarea name="" id="" cols="30" rows="10" class="field" placeholder="Your Message" required></textarea>
+        <input type="submit" class="btn" value="Send Message">
+      </form>
     </div>
   </div>
 </body>
